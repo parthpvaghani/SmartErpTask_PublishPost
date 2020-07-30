@@ -34,15 +34,11 @@ class AllPost extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    
+const mapStateToProps = (state) => { 
   
     return {
         posts: state
     }
-  
-        
-   
     
 }
 export default connect(mapStateToProps)(AllPost);

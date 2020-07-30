@@ -5,16 +5,16 @@ const postReducer = (state = [], action) => {
         case 'DELETE_POST':
             return state.filter((post) => post.id !== action.id)
         case 'SEARCH_POST':
+            
+                    return state.filter(post => {
+                        return (
+                                 (post.title.toLowerCase().indexOf(action.title.toLowerCase()) !== -1)
+                            )
+                })
+                
 
-            return state.filter(post => {
-                return (
-                    (post.title.toLowerCase().indexOf(action.title.toLowerCase()) !== -1)
-                )
-            })
-
-
-
-
+            
+           
         case 'EDIT_POST':
             return state.map((post) => post.id === action.id ? { ...post, editing: !post.editing } : post)
         case 'UPDATE':

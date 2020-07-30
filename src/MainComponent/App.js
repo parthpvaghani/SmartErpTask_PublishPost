@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PostForm from './shared/PostForm';
-import AllPost from './shared/AllPost';
-import SearchBar from './shared/Searchbar'
+import PostForm from '../shared/PostForm';
+import AllPost from '../shared/AllPost';
+import SearchBar from '../shared/Searchbar'
 
 class App extends Component {
   constructor(props) {

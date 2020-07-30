@@ -1,7 +1,6 @@
 import React from 'react';
-import SearchBar from './Searchbar';
-import './searchbar.css';
-
+import PostForm from './PostForm';
+import './PostForm.css';
 import postReducer from '../postReducer';
 
 import { createStore } from 'redux';
@@ -11,14 +10,14 @@ import ProviderWrapper from '../Provider.js'
 const store = createStore(postReducer);
 
 export default {
-    title: 'Searchbar',
-    component: 'SearchBar'
+    title: 'PostForm',
+    component: 'PostForm'
 };
 
-export const Defaultsearchbar = () => {
+export const DefaultPostForm = () => {
     return (
         <ProviderWrapper store={store}>
-        <SearchBar />
+        <PostForm />
         </ProviderWrapper>
     )
 };
