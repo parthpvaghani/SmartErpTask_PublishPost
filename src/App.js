@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PostForm from './shared/PostForm';
 import AllPost from './shared/AllPost';
-import { MdSearch } from "react-icons/md";
-import { MdClose } from "react-icons/md";
-import Post from './shared/Post';
 import SearchBar from './shared/Searchbar'
 
 class App extends Component {
