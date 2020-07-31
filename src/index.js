@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './MainComponent/App';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
 
 import postReducer from './reducers/postReducer';
-import { Provider } from 'react-redux';
+
 
 import { createStore } from 'redux';
 
